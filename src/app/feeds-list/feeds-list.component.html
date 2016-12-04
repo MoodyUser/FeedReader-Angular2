@@ -2,7 +2,7 @@
   feeds-list works!
 </p>
 
-<div *ngFor="let feed of feeds">
+<div *ngFor="let feed of feeds | search:data">
     {{feed.id}}
     {{feed.url}}
     <!--

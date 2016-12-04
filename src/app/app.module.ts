@@ -8,7 +8,6 @@ import { SearchFeedPipe } from './search-pipe.pipe';
 import { Logger } from './logger.service';
 import { FeedsBaseService } from './feeds.service';
 import { FeedsListComponent } from './feeds-list/feeds-list.component';
-import { FeedsListService } from './feeds-list/feeds-list.service';
 import { FeedsSearchComponent } from './feeds-search/feeds-search.component';
 
 @NgModule({
@@ -20,7 +19,7 @@ import { FeedsSearchComponent } from './feeds-search/feeds-search.component';
     FormsModule,
     HttpModule
   ],
-  providers: [FeedsListService,FeedsBaseService,Logger],
+  providers: [FeedsBaseService,Logger],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

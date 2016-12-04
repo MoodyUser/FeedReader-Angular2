@@ -1,13 +1,13 @@
 <p>
-  feeds-list works!
+  feeds-list works! {{filter.tag}}
 </p>
 
-<div *ngFor="let feed of feeds | search:data">
-    {{feed.id}}
+<div *ngFor="let feed of feeds | search:filter.tag">
     {{feed.url}}
     <!--
+    {{feed.id}}
+    {{feed.owner_id}}
     {{feed.updated_time}}
     {{feed.message}}
   -->
-    {{feed.owner_id}}
  </div>

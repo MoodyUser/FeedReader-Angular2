@@ -8,17 +8,29 @@ import 'rxjs/Rx';
 
 @Injectable()
 export class FeedsBaseService {
-  private feeds = [];
+  private feeds = null;
+  private filter = {
+    tag:''
+  }
   private feedUrl = 'http://localhost:8080/feeds';
 
   constructor(private http: Http,private logger: Logger) {
-    this.getFeeds().subscribe(feedsData => this.feeds = feedsData)
-    // Set the filter
+  }
+
+  setFilter(filter:string){
+    this.filter.tag = filter;
+  }
+
+  getFilter(){
+    return this.filter;
   }
 
   getFeeds() {
-    return this.http.get(this.feedUrl)
-                      .map((response:Response) => response.json());
+    if(this.feeds==null){
+      this.feeds = this.http.get(this.feedUrl)
+                        .map((response:Response) => response.json());
+    }
+    return this.feeds
   }
 
 }

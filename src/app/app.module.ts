@@ -5,6 +5,7 @@ import { HttpModule } from '@angular/http';
 import { PlatformLocation } from '@angular/common';
 import { AppComponent } from './app.component';
 import { Logger } from './logger.service';
+import { FeedsBaseService } from './feeds.service';
 import { FeedsListComponent } from './feeds-list/feeds-list.component';
 import { FeedsListService } from './feeds-list/feeds-list.service';
 import { FeedsSearchComponent } from './feeds-search/feeds-search.component';
@@ -18,7 +19,7 @@ import { FeedsSearchComponent } from './feeds-search/feeds-search.component';
     FormsModule,
     HttpModule
   ],
-  providers: [FeedsListService,Logger],
+  providers: [FeedsListService,FeedsBaseService,Logger],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -7,14 +7,12 @@ import { Logger } from '../logger.service';
   styleUrls: ['./feeds-list.component.css'],
   providers: [FeedsListService,Logger]
 })
-export class FeedsListComponent implements OnInit {
+export class FeedsListComponent {
 
   feeds = [];
 
   constructor(feedsListService: FeedsListService) {
-     this.feeds = feedsListService.getFeeds();
+    feedsListService.getFeeds().subscribe(feedsData => this.feeds = feedsData)
    }
-  ngOnInit() {
-  }
 
 }

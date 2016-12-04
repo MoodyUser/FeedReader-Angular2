@@ -1,6 +1,13 @@
 <p>
   feeds-list works!
 </p>
+
 <div *ngFor="let feed of feeds">
-    {{feed}}
+    {{feed.id}}
+    {{feed.url}}
+    <!--
+    {{feed.updated_time}}
+    {{feed.message}}
+  -->
+    {{feed.owner_id}}
  </div>

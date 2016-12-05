@@ -2,7 +2,7 @@
   Showing {{count}} Resauls for {{filter.tag}}.
 </p>
  <div class="list">
-   <div *ngFor="let feed of feeds | search:filter.tag" class="item w3-card-2">
+   <span *ngFor="let feed of feeds | search:filter.tag" class="item w3-card-2" [ngStyle]="{'background-image': 'url(' + feed.picture + ')'}">
      <p class="message">
        {{feed.message}}
      </p>
@@ -12,4 +12,4 @@
    {{feed.owner_id}}
    {{feed.updated_time}}
  -->
-   </div>
+   </span>

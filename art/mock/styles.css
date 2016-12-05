@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Sarpanch:900');
+
+body{
+	display:flex
+}
+
+.container{
+	display: flex;
+	margin-left:auto;
+	margin-right:auto;
+	width:95%;
+	align-items :center;
+	flex-direction: column ;
+	justify-content:space-between;
+}
+
+
+.header{
+	margin-top:4.3em;
+	width:70%;
+	display: flex;
+	flex-flow: row wrap;
+	align-content: space-between;
+}
+
+.banner{
+	display:absolute;
+	width:256px;
+	height:256px;
+	background-image: url("../News-Mic-iPhone-icon-256.png");
+	position: absolute;
+    top: 0.2em;
+    left: 0;
+    z-index: -100;
+}
+
+.title{
+	color:#FDD835;
+	font-family: 'Sarpanch', sans-serif;
+    font-size: 200%;
+
+}
+
+input{	
+	margin-top:0.1em;
+	margin-bottom:4.7em;
+	width:70%;
+	height:1.9em;
+	font-size:80%;
+    transition:  margin-top 1.5s,width 1.5s,height 1.5s,font-size 1.5s;
+	transition-timing-function: ease-in-out;
+}
+
+
+input:focus { 
+	margin-top:5em;
+	width:80%;
+	height:2.1em;
+	font-size:100%;
+}
+
+
+.list{
+	
+	display: flex;
+	flex-flow: row wrap;
+	align-items: flex-start;
+}
+
+.item{
+		display: inline-flex;
+		max-width:20em;
+		max-height:10em;
+		margin: 0 0 1.6em 1.6em;
+		padding: 0.9em 0.9em 0.9em 0.9em;
+		background-color:white;
+		overflow:hidden !important;
+		transition:  max-height 2.5s;
+		transition-timing-function: ease-in-out;
+		}
+		
+		
+.item:hover{
+		z-index: 10;
+		max-width:20em;
+		max-height:1000em;
+		margin: 0 0 1.6em 1.6em;
+		padding: 0.9em 0.9em 0.9em 0.9em;
+		background-color:white;
+		}
+				

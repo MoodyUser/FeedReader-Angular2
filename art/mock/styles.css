@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Sarpanch:900');
 
-body{
+html, body {
+    font-family: Verdana,sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
 	display:flex
 }
 
@@ -44,7 +47,7 @@ body{
 input{	
 	margin-top:0.1em;
 	margin-bottom:4.7em;
-	width:70%;
+	width:75%;
 	height:1.9em;
 	font-size:80%;
     transition:  margin-top 1.5s,width 1.5s,height 1.5s,font-size 1.5s;
@@ -54,7 +57,7 @@ input{
 
 input:focus { 
 	margin-top:5em;
-	width:80%;
+	width:85%;
 	height:2.1em;
 	font-size:100%;
 }

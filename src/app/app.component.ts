@@ -10,4 +10,5 @@ import { FeedsBaseService } from './feeds.service';
 })
 export class AppComponent {
   title = 'app works!';
+  bannerTitle = 'Fast';
 }

@@ -1,0 +1,27 @@
+.list{
+	display: flex;
+	flex-flow: row wrap;
+	align-items: flex-start;
+}
+
+.item{
+		display: inline-flex;
+		max-width:20em;
+		max-height:10em;
+		margin: 0 0 1.6em 1.6em;
+		padding: 0.9em 0.9em 0.9em 0.9em;
+		background-color:white;
+		overflow:hidden !important;
+		transition:  max-height 2.5s;
+		transition-timing-function: ease-in-out;
+		}
+
+
+.item:hover{
+		z-index: 10;
+		max-width:20em;
+		max-height:1000em;
+		margin: 0 0 1.6em 1.6em;
+		padding: 0.9em 0.9em 0.9em 0.9em;
+		background-color:white;
+		}

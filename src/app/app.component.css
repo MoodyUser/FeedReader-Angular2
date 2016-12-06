@@ -8,6 +8,7 @@
 	align-items :center;
 	flex-direction: column ;
 	justify-content:space-between;
+  z-index: 10;
 }
 
 
@@ -19,20 +20,29 @@
 	align-content: space-between;
 }
 
+.title{
+  color: rgba(255,255,255,.8);
+  font-size: 150%;
+  z-index: 10;
+	position: absolute;
+  top: .8em;
+  right: 15%;
+}
+
 .banner{
+  z-index: 5;
 	display:absolute;
 	width:256px;
 	height:256px;
 	background-image: url("../News-Mic-iPhone-icon-256.png");
 	position: absolute;
-    top: 0.2em;
-    left: 0;
-    z-index: -100;
+  top: 0.2em;
+  left: 0;
 }
 
 .banner-title{
 	color:#FDD835;
 	font-family: 'Sarpanch', sans-serif;
-    font-size: 200%;
-
+  font-size: 200%;
+  z-index: 10;
 }

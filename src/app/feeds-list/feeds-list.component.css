@@ -1,4 +1,12 @@
 .list{
+  	background-color: #FFFFFF;
+    padding-top: 6.2em;
+    width: 100%;
+  }
+
+.end-text{
+  padding-left: 1.6em;
+  padding-bottom: 1.6em;
 }
 
 .item{
@@ -16,8 +24,6 @@
 
 
 .item:hover{
-		z-index: 10;
-		max-width:20em;
 		max-height:1000em;
 		margin: 0 0 1.6em 1.6em;
 		padding: 0.9em 0.9em 0.9em 0.9em;

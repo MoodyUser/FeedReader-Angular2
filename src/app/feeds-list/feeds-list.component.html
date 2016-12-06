@@ -1,8 +1,5 @@
-<p>
-  Showing {{count}} Resauls for {{filter.tag}}.
-</p>
- <div class="list">
-   <a href="{{feed.url}}" *ngFor="let feed of feeds | search:filter.tag" class="item w3-card-2" [ngStyle]="{'background-image': 'url(' + feed.picture + ')'}">
+<div class="list">
+   <a href="{{feed.url}}" target="_blank" *ngFor="let feed of feeds | search:filter.tag" class="item w3-card-2" [ngStyle]="{'background-image': 'url(' + feed.picture + ')'}">
      <p class="message">
        {{feed.message}}
      </p>
@@ -13,3 +10,5 @@
    {{feed.updated_time}}
  -->
    </a>
+   <p class="end-text">No more results.</p>
+  </div>

@@ -9,6 +9,6 @@ import { FeedsBaseService } from './feeds.service';
   providers: [FeedsBaseService]
 })
 export class AppComponent {
-  title = 'app works!';
+  title = 'Fast, Reliable Thrift shop';
   bannerTitle = 'Fast';
 }
